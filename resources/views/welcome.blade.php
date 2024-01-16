@@ -136,5 +136,9 @@
                 </div>
             </div>
         </div>
+
+        <div>
+            <p>{{$events->first()->name}}</p>
+        </div>
     </body>
 </html>
