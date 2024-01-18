@@ -8,7 +8,7 @@ class PageController extends Controller
 {
   public function home(){
 
-    $events = Event::all();
+    $events = Event::paginate(5);
 
     return view('welcome', compact('events'));
   }

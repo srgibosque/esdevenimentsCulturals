@@ -23,7 +23,7 @@ class EventFactory extends Factory
             'date' => $this->faker->date($format = 'Y-m-d', $max = 'now'),
             'location' => $this->faker->city,
             'description' => $this->faker->paragraph($nbSentences = 3, $variableNbSentences = true),
-            'image' => $this->faker->imageUrl($width = 640, $height = 480),
+            'image' => 'default.png',
             'author' => $this->faker->lastName,
         ];
     }
