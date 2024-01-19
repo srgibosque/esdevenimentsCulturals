@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/{id}', [PageController::class, 'viewSingleEvent'])->name('eventPage');
+
 Route::get('/', [PageController::class, 'home'])->name('home');
 
 
@@ -31,3 +31,5 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+Route::get('/{id}', [PageController::class, 'viewSingleEvent'])->name('eventPage');
