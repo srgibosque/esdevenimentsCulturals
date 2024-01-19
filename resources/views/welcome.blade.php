@@ -37,7 +37,7 @@
                 <div class="p-6 bg-white rounded-lg shadow-lg">
                     <img src="{{ asset('images/' . $event->image) }}" alt="image" height="480px" width="360px">
                     <h3 class="mt-6 text-xl font-semibold text-gray-400 dark:text-white">
-                        <a href="#">{{$event->name}}</a> 
+                        <a href="{{ route('eventPage', ['id' => $event->id]) }}">{{$event->name}}</a> 
                     </h3>
                     <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">{{$event->date}}</p>
                 </div>

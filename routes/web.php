@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/{id}', [PageController::class, 'viewSingleEvent'])->name('eventPage');
 Route::get('/', [PageController::class, 'home'])->name('home');
 
 
