@@ -16,6 +16,13 @@
         </style>
     </head>
     <body class="antialiased">
+        <div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="{{ route('events.getEvents', ['page' => 1]) }}">API_events</a></li>
+                <li><a href="{{ route('event.getEvent', ['id' => 1]) }}">API_event</a></li>
+            </ul>
+        </div>
         <div class="bg-gray-100 ">
             @if (Route::has('login'))
                 <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right z-10">
