@@ -12,4 +12,11 @@ class PageController extends Controller
 
     return view('welcome', compact('events'));
   }
+
+  public function viewSingleEvent($id){
+
+    $singleEvent = Event::findOrFail($id);
+
+    return view('event', compact('singleEvent'));
+  }
 }
